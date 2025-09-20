@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPI QR Scanner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Scan UPI QR Code</h1>
+        <div class="video-container">
+            <video id="qr-video"></video>
+        </div>
+        <div id="result-container" class="result-container" style="display: none;">
+            <h2>Payment Details</h2>
+            <div id="details"></div>
+            <button id="scan-again">Scan Again</button>
+        </div>
+        <div id="message" class="message">
+            <p>Scanning for a QR code...</p>
+        </div>
+    </div>
+    <script src="https://unpkg.com/jsqr@1.4.0/dist/jsQR.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
